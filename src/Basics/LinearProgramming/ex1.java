@@ -1,4 +1,4 @@
-package by.epam.learn.main;
+package Basics.LinearProgramming;
 
 import java.util.Scanner;
 

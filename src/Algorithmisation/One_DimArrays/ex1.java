@@ -21,7 +21,7 @@ public class ex1 {
             if(array[i] % K == 0){
                 sum += array[i];
             }
-            System.out.print(array[i]);
+            System.out.print(array[i] + " ");
 
         }
         System.out.println();

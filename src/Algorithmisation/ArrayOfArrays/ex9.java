@@ -9,18 +9,18 @@ public class ex9 {
         int m = in.nextInt();
         System.out.print("Ввдите количество стлолбцов: ");
         int n = in.nextInt();
-        double [][] array = new double[m][n];
+        int [][] array = new int[m][n];
         System.out.println("Ввод массива: ");
         for(int i = 0; i < m; i++){
             for (int j = 0; j<n; j++){
-                array[i][j] = in.nextDouble();
+                array[i][j] = in.nextInt();
             }
         }
 
         System.out.println("Исходный массив: ");
         for(int i = 0; i < m; i++){
             for (int j = 0; j<n; j++){
-                System.out.print("  " + array[i][j] + "  ");
+                System.out.printf("%3d ", array[i][j]);
             }
             System.out.println();
         }

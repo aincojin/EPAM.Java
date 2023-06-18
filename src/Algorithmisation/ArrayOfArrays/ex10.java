@@ -7,18 +7,18 @@ public class ex10 {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество строк: ");
         int n = in.nextInt();
-        double [][] array = new double[n][n];
+        int [][] array = new int[n][n];
 
         System.out.println("Ввод массива: ");
         for(int i = 0; i < n; i++){
             for (int j = 0; j<n; j++){
-                array[i][j] = in.nextDouble();
+                array[i][j] = in.nextInt();
             }
         }
         System.out.println("Исходный массив: ");
         for(int i = 0; i < n; i++){
             for (int j = 0; j < n; j++){
-                System.out.print("  " + array[i][j] + "  ");
+                System.out.printf("%3d ", array[i][j]);
             }
             System.out.println();
         }
@@ -26,7 +26,7 @@ public class ex10 {
         for(int i = 0; i < n; i++){
             for (int j = 0; j < n; j++){
                 if(i == j && array[i][j] > 0){
-                    System.out.print(" " + array[i][j] + " ");
+                    System.out.printf("%3d ", array[i][j]);
                 }
             }
         }

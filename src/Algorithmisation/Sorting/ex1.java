@@ -21,12 +21,13 @@ public class ex1 {
             System.out.println("Введите число меньше размерности перого массива :");
             k = in.nextInt();
         }
-        System.out.println("Первый массив: ");
+
+        System.out.println("\nПервый массив: ");
         for(int i = 0; i < N; i++){
                 array1[i] = rnd.nextInt(30)+1;
                 System.out.printf("%3d ", array1[i]);
         }
-        System.out.println("Второй массив: ");
+        System.out.println("\nВторой массив: ");
         for(int i = 0; i < M; i++){
             array2[i] = rnd.nextInt(30)+1;
             System.out.printf("%3d ", array2[i]);
@@ -46,7 +47,7 @@ public class ex1 {
             array1[j] = array2[i];
             j++;
         }
-        System.out.println("Результат: ");
+        System.out.println("\nРезультат: ");
         for(int i = 0; i < array1.length; i++){
             System.out.printf("%3d ", array1[i]);
         }

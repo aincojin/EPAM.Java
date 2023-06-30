@@ -10,7 +10,7 @@ public class Auto {
     private Engine engine;
 
     Auto(boolean isFueled, String model){
-        this.isFueled = isFueled;
+        this.isFueled = true;
         this.model = model;
         this.wheels = new ArrayList<>(4);
     }
@@ -54,7 +54,7 @@ public class Auto {
                     System.out.printf("%d колесо машины испорчено. Замените," +
                             "а то не поедете.\n", i + 1);
                     letsGo = false;
-                }
+                }else letsGo = true;
             }
             if(!isFueled){
                 System.out.println("Заправьте машину.");

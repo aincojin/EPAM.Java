@@ -15,8 +15,10 @@ public class exe {
         auto.setWheels(new Wheel(true), new Wheel(false), new Wheel(true), new Wheel(true));
         System.out.printf("Установлены колеса. Машина выезжает%n");
 
-        auto.drive();
+
         auto.changeWheel();
+        auto.refuel();
+        auto.drive();
         auto.printModel();
     }
 }

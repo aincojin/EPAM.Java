@@ -1,21 +1,17 @@
 package BasicsOfOOP.ex2;
 
-import java.util.ArrayList;
 
 public class exe {
     public static void main(String[] args) {
-        Product prod1 = new Product("Стол", 700);
-        Product prod2 = new Product("Стул", 400);
-        Product prod3 = new Product("Зеркало", 1300);
+        double moneyLeft = 2000;
+        Payment payment = new Payment(moneyLeft);
 
-        ArrayList<Product> products = new ArrayList<>();
+        payment.addProduct(payment.new Product("Стол", 700));
+        payment.addProduct(payment.new Product("Стул", 400));
+       // payment.addProduct(payment.new Product("Зеркало", 1300));
 
-        products.add(prod2);
-        products.add(prod3);
 
-        Payment payment = new Payment(new ArrayList<>(), 2000);
-
-        payment.payForCart(products);
+        payment.payForCart();
 
     }
 }
